@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/simple-grid.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Framingham calculator prototype</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Framingham Cardiac Risk Score Calculator</h1>
+       
+            <p class="description">This calculator helps assess 10 year risk of coronary disease based on Framingham study. This is only a preventive tool and is in no way a replacement for professional diagonosis and treatment for heart disease. Please submit the details and get your coronary risk score. </p>
+
+            <form name="calculator" id="calculator" action="#" method="post">
+                
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" id="male" value="male" required> <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female" required><label for="female">Female</label><br><br>
+
+                <label for="age">Age (in years): </label>
+                <input type="number" name="age" id="age" min="18" required> <br><br>
+
+                <label for="tc">Total Cholestrol (mg/dl):</label>
+                <input type="number" name="tc" id="tc" id="tc" step="0.01" required><br><br>
+
+                <label for="hdl">HDL levels (mg/dl):</label>
+                <input type="number" name="hdl" id="hdl" id="hdl" step="0.01" required><br><br>
+
+                <label for="bp">Systolic Blood Pressure (mmHg):</label>
+                <input type="number" name="bp" id="bp" id="bp" step="1" required><br><br>
+
+                <label for="diabetic">Are you diabetic?</label><br>
+                <input type="radio" name="diabetic" id="dia-yes" value="yes" required>
+                <label for="dia-yes">Yes</label><br>
+                <input type="radio" name="diabetic" id="dia-no" value="no" required>
+                <label for="dia-no">No</label><br><br>
+
+                <label for="smoke">Do you smoke?</label><br>
+                <input type="radio" name="smoke" id="smoke-yes" value="yes" required>
+                <label for="smoke-yes">Yes</label><br>
+                <input type="radio" name="smoke" id="smoke-no" value="no" required>
+                <label for="smoke-no">No</label><br><br>
+
+                <button type="submit" id="submit">Submit</button>
+
+            </form>
+
+    </div>
+    <script src="./src/js/framingham-calculator.js"></script>
+</body>
+</html>
