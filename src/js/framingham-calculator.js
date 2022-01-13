@@ -5,14 +5,6 @@ form.addEventListener('submit', handleSubmit );
 function handleSubmit(event) {
     event.preventDefault(); // prevent submission of the form to server and reload of page
 
-    const age = form['age'].value;
-    const gender = form['gender'].value;
-    const tc = form['tc'].value;
-    const hdl = form['hdl'].value;
-    const bp = form['bp'].value;
-    const diabetic = form['diabetic'].value;
-    const smoke = form['smoke'].value;
-
     console.log(`age is ${age}`);
 
     const crs = calculate(form);
